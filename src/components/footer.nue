@@ -1,0 +1,5 @@
+<div @name="app-footer" class="footer">
+    <div class="container">
+        This project is built for NueJS. Inspired by frameworks such as SvelteKit, Nuxt and NextJS.
+    </div>
+</div>

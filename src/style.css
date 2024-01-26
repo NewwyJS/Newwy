@@ -1,0 +1,111 @@
+html body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, -apple-system, 
+                BlinkMacSystemFont, 'Segoe UI', Roboto,  
+                Oxygen, Ubuntu, Cantarell, 'Open Sans', 
+                'Helvetica Neue', sans-serif; 
+}
+
+.container {
+    width: 1024px;
+    margin-inline: auto;
+    padding-inline: 32px;
+}
+
+@media (max-width: 1140px) {
+    .container {
+        width: 996px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 768px;
+    }
+}
+
+.header {
+    .container {
+        padding-block: 32px;
+        display: grid;
+        grid-template-columns: 140px auto;
+        gap: 24px;
+        align-items: center;
+
+        .logo {
+            width: 100%;
+        }
+
+        .right {
+            display: flex;
+            margin-left: auto;
+            justify-self: end;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .nav {
+            display: flex;
+            gap: 24px;
+            margin-left: auto;
+            justify-self: end;
+
+            a {
+                font-weight: 600;
+                display: block;
+                color: black;
+                text-decoration: none;
+            }
+        }
+
+        .icons {
+            padding: 8px;
+            border: 1px solid #e6e6e6;
+            border-radius: 999px;
+            width: fit-content;
+        }
+    }
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-block: 80px;
+
+    h1 {
+        margin: 0;
+        width: 66%;
+        padding: 0;
+        font-weight: 900;
+        font-size: 56px;
+    }
+
+    h3 {
+        margin: 12px 0 0 0;
+        padding: 0;
+    }
+
+    .button {
+        display: block;
+        padding: 12px 20px;
+        border-radius: 4px;
+        border: 1px solid black;
+        color: black;
+        text-decoration: none;
+        width: fit-content;
+        background-color: transparent;
+        transition: .2s ease;
+
+        &:hover {
+            color: white;
+            background-color: black;
+        }
+    }
+}
+
+.footer {
+    padding-block: 32px;
+    color: #aaa;
+}

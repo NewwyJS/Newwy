@@ -1,0 +1,23 @@
+<newwy:head>
+    <title>Newwy: A simple framework for NueJS</title>
+    <link rel="shortcut icon" href="favicon.svg">
+</newwy:head>
+
+<div>
+    <app-header></app-header>
+
+    <div class="hero container">
+        <div>
+            <h1>{title}</h1>
+            <h3>{text}</h3>
+        </div>
+        <a href="#" @click="index+=1" class="button">Increment this number below</a>
+        <div>You've clicked this button {index} times!</div>
+    </div>
+
+    <script>
+        index = 0
+    </script>
+
+    <app-footer></app-footer>
+</div>

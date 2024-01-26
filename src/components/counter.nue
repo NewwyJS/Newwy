@@ -1,0 +1,12 @@
+<div @name="counter">
+    <button @click="index += 1">Add 1 to counter</button>
+
+    <div>Index is: {index}</div>
+
+    <script>
+        index = 0;
+        mounted(){
+            console.log('test')
+        }
+    </script>
+</div>
