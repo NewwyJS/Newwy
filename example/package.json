@@ -5,9 +5,9 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "node index.js --experimental-modules",
+    "dev": "NODE_ENV=development node index.js --experimental-modules",
     "build": "vite build",
-    "start": "node index.js --experimental-modules"
+    "start": "NODE_ENV=production node index.js --experimental-modules"
   },
   "author": "",
   "license": "ISC",
