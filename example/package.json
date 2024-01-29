@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "newwy": "file:..",
     "nuejs-core": "^0.3.1"
   }
 }

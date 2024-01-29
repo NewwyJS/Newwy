@@ -1,0 +1,12 @@
+<newwy:head>
+    <title>Newwy: A simple framework for NueJS</title>
+    <link rel="shortcut icon" href="favicon.svg">
+</newwy:head>
+
+<div>
+    <app-header></app-header>
+
+    <div class="container">About</div>
+
+    <app-footer></app-footer>
+</div>

@@ -4,6 +4,8 @@
 
         <div class="right">
             <div class="nav">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
                 <a href="https://nuejs.org/docs/">Get started with NueJS</a>
             </div>
 
