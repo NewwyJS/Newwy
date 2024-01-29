@@ -1,6 +1,6 @@
 <div @name="app-header" class="header">
     <div class="container">
-        <img src="/newwy.png" class="logo" alt="Logo">
+        <a href="/"><img src="/favicon.svg" class="logo" alt="Logo"></a>
 
         <div class="right">
             <div class="nav">
