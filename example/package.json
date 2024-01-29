@@ -1,0 +1,17 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js --experimental-modules",
+    "build": "vite build",
+    "start": "node index.js --experimental-modules"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nuejs-core": "^0.3.1"
+  }
+}
