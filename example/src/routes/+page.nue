@@ -1,6 +1,5 @@
 <newwy:head>
-    <title>Newwy: A simple framework for NueJS</title>
-    <link rel="shortcut icon" href="favicon.svg">
+    <title>{title}</title>
 </newwy:head>
 
 <div>
