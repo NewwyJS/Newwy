@@ -1,3 +1,4 @@
-import createApp from "../index.js";
+import App from "../index.js";
 
-await createApp();
+const app = new App();
+app.start();
