@@ -83,9 +83,10 @@ html body {
         font-size: 56px;
     }
 
-    h3 {
+    h2 {
         margin: 12px 0 0 0;
         padding: 0;
+        font-size: 20px;
     }
 
     .button {
@@ -108,5 +109,4 @@ html body {
 
 .footer {
     padding-block: 32px;
-    color: #aaa;
 }
