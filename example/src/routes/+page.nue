@@ -1,5 +1,6 @@
 <newwy:head>
     <title>{title}</title>
+    <meta name="description" content="{text}">
 </newwy:head>
 
 <div>
