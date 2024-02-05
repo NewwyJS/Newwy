@@ -3,3 +3,9 @@
         This project is built for NueJS. Inspired by frameworks such as SvelteKit, Nuxt and NextJS.
     </div>
 </div>
+
+<newwy:style>
+.footer {
+    padding-block: 32px;
+}
+</newwy:style>
