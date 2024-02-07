@@ -1,0 +1,20 @@
+[colors]
+black = "#000"
+white = "#fff"
+lightGray = "#e6e6e6"
+
+[radius]
+sm = "4px"
+md = "8px"
+lg = "12px"
+xl = "16px"
+full = "999999px"
+
+[font-sizes]
+default = "16px"
+h1 = "40px"
+h2 = "32px"
+h3 = "28px"
+h4 = "24px"
+h5 = "20px"
+h6 = "16px"

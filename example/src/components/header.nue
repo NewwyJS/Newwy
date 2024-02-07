@@ -6,7 +6,7 @@
             <div class="nav">
                 <a href="/">Home</a>
                 <a href="/about">About</a>
-                <a href="https://nuejs.org/docs/">Get started with NueJS</a>
+                <a href="https://nuejs.org/docs/nuejs">Get started with NueJS</a>
             </div>
 
             <div class="icons">
@@ -21,7 +21,7 @@
     </div>
 </div>
 
-<newwy:style>
+<style>
     .header {
         .container {
             padding-block: 32px;
@@ -29,6 +29,7 @@
             grid-template-columns: 160px auto;
             gap: 24px;
             align-items: center;
+            background-color: $colors.white;
 
             .logo {
                 width: 100%;
@@ -51,17 +52,17 @@
                 a {
                     font-weight: 600;
                     display: block;
-                    color: black;
+                    color: $colors.black;
                     text-decoration: none;
                 }
             }
 
             .icons {
                 padding: 8px;
-                border: 1px solid #e6e6e6;
-                border-radius: 999px;
+                border: 1px solid $colors.lightGray;
+                border-radius: $radius.full;
                 width: fit-content;
             }
         }
     }
-</newwy:style>
+</style>
