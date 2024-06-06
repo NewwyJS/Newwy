@@ -1,4 +1,4 @@
-import App from "../index.js";
+import App from "newwy";
 
 const app = new App();
 app.start();

@@ -10,5 +10,6 @@ export default defineConfig({
   },
   server: {
     open: './src/index.html',
+    port: process.env.PORT || 5173
   },
 });
