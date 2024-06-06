@@ -1,4 +1,4 @@
-import App from "../index.js";
+import Newwy from "newwy";
 
-const app = new App();
+const app = new Newwy();
 app.start();

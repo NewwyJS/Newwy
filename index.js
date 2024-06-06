@@ -1,3 +1,3 @@
-import App from "./lib/app.js";
+import Newwy from "./lib/app.js";
 
-export default App;
+export default Newwy;
