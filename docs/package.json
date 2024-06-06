@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "newwy": "file:..",
-    "nuejs-core": "^0.3.1"
+    "newwy": "github:NewwyJS/Newwy",
+    "nuejs-core": "^0.3.1",
+    "vite": "^5.2.12"
   }
 }

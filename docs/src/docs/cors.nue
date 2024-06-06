@@ -1,0 +1,4 @@
+<div @name="docs-cors">
+    <h1>Cors</h1>
+    <p>Work in progress</p>
+</div>

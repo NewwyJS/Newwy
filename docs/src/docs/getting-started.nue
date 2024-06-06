@@ -1,15 +1,30 @@
 <div @name="docs-getting-started">
-    <h1>Getting started</h1>
+    <h1>Get started</h1>
     <div class="big">
-        Newwy's objective is to make NueJS available through a simple SSR (Server Side Rendering) framework with
+        Newwy's objective is to make Nue available through a simple SSR (Server Side Rendering) framework with
         familiar developer standards.
     </div>
+    
     <hr>
 
     <h2>Why Newwy?</h2>
-    <p>Newwy resembles a familiar way of developing using a SSR framework like NextJS, Nuxt and/or SvelteKit but for
-        NueJS. Don't get me
-        wrong, NueKit is great and you should try that first. But some people want to stay close to standards of other
-        frameworks. That's where Newwy
-        comes in.</p>
+    <p>Newwy is a free and open-source framework to create full-stack SSR (Server Side Rendering) web applications and websites with Nue.</p>
+
+    <h3>What comes with it?</h3>
+    <ul>
+        <li>Server Side Rendering - So you don't have to setup a server seperately.</li>
+        <li>Automatic component import - You don't have to import them, they work out-of-the-box.</li>
+        <li>Build with Vite - Fast, modular and extensible loading with Vite.</li>
+    </ul>
+
+    <h3>VS Code extensions</h3>
+    <p>If you want syntax highlighting for Visual Studio Code, you can use the following extension.</p>
+    <a href="https://marketplace.visualstudio.com/items?itemName=yaoyuanzhang.nue">https://marketplace.visualstudio.com/items?itemName=yaoyuanzhang.nue</a>
+
+    <hr>
+
+    <h2>Next up</h2>
+    <ul>
+        <li>HMR (Hot Module Replacement)</li>
+    </ul>
 </div>

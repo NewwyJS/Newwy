@@ -1,6 +1,6 @@
 <div class="footer" @name="app-footer">
     <div class="container">
-        Copyright © 2024 Newwy - MIT License - Powered by NueJS
+        Newwy - MIT License - Powered by Nue
     </div>
 </div>
 

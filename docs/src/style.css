@@ -65,3 +65,11 @@ hr {
   border: 1px solid var(--colors-gray);
   border-radius: var(--radius-small);
 }
+
+code {
+  white-space: pre-wrap;
+}
+
+a {
+  color: var(--colors-black);
+}

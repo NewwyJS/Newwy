@@ -1,7 +1,7 @@
 <div @name="docs-guide">
-    <h1>Guide</h1>
+    <h1>Quick start</h1>
     <div class="big">
-        How to install and start with Newwy
+        How to install and start with Newwy.
     </div>
     <hr>
     <h2>Install Newwy</h2>
@@ -12,7 +12,21 @@
     <p>Start developing</p>
     <pre><code class="powershell">npm run dev</code></pre>
 
+    <h2>NPM</h2>
+    <p>An NPM package is currently a work in progress.</p>
+
+    <pre><code class="powershell">npm i https://github.com/NewwyJS/Newwy</code></pre>
+    <p>Then create an index.js and add the following:</p>
+    <pre><code class="javascript">{demoIndex}</code></pre>
+
     <h2>Deploy Newwy</h2>
     <p>Deploy Newwy using the start command</p>
     <pre><code class="powershell">npm run start</code></pre>
+
+    <script>
+        demoIndex = `import App from "newwy";
+        const app = new App();
+        app.start();
+        `;
+    </script>
 </div>

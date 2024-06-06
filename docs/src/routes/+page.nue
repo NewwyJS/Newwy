@@ -10,7 +10,7 @@
 
             <a href="#" @click.prevent="switchTab('guide')" class="{isActive('guide')}">
                 <i class="ri-book-open-line"></i>
-                <div>Guide</div>
+                <div>Quick start</div>
             </a>
 
             <hr>
@@ -19,16 +19,6 @@
                 <i class="ri-route-line"></i>
                 <div>Routing</div>
             </a>
-            <a href="#" @click.prevent="switchTab('server')" class="{isActive('server')}">
-                <i class="ri-server-line"></i>
-                <div>Server</div>
-            </a>
-            <a href="#" @click.prevent="switchTab('404')" class="{isActive('404')}">
-                <i class="ri-error-warning-line"></i>
-                <div>404</div>
-            </a>
-
-            <hr>
 
             <a href="#" @click.prevent="switchTab('middlewares')" class="{isActive('middlewares')}">
                 <i class="ri-plug-line"></i>
@@ -40,8 +30,6 @@
                 <div>CORS</div>
             </a>
 
-            <hr>
-
             <a href="#" @click.prevent="switchTab('styling')" class="{isActive('styling')}">
                 <i class="ri-brush-line"></i>
                 <div>Styling</div>
@@ -49,8 +37,14 @@
         </div>
 
         <div>
-            <div :hidden="tab !== 'gettingstarted'"><docs-getting-started /></div>
-            <div :hidden="tab !== 'guide'"><docs-guide /></div>
+            <div :hidden="!isActiveTab('gettingstarted')"><docs-getting-started /></div>
+            <div :hidden="!isActiveTab('guide')"><docs-guide /></div>
+            <div :hidden="!isActiveTab('routing')"><docs-routing /></div>
+            <div :hidden="!isActiveTab('server')"><docs-server /></div>
+            <div :hidden="!isActiveTab('404')"><docs-404 /></div>
+            <div :hidden="!isActiveTab('middlewares')"><docs-middlewares /></div>
+            <div :hidden="!isActiveTab('cors')"><docs-cors /></div>
+            <div :hidden="!isActiveTab('styling')"><docs-styling /></div>
         </div>
     </div>
 
