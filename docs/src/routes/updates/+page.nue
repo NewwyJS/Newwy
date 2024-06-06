@@ -1,0 +1,9 @@
+<div @name="page-updates">
+    <app-header></app-header>
+
+    <div class="container">
+       
+    </div>
+
+    <app-footer></app-footer>
+</div>
