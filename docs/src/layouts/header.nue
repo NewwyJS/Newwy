@@ -3,7 +3,6 @@
         <a href="/" class="logo"><img src="logo.svg"></a>
         <div class="menu">
             <a href="/" class="active">Docs</a>
-            <a href="/reference">Reference</a>
             <a href="/updates">Updates</a>
         </div>
 
