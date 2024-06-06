@@ -1,0 +1,13 @@
+<div class="footer" @name="app-footer">
+    <div class="container">
+        Newwy - MIT License - Powered by Nue
+    </div>
+</div>
+
+<style>
+    .footer {
+        padding-block: 32px;
+        border-top: 1px solid $colors.gray;
+        color: $colors.black-faded;
+    }
+</style>

@@ -1,0 +1,89 @@
+<div @name="app-header" class="header">
+    <div class="container">
+        <a href="/" class="logo"><img src="logo.svg"></a>
+        <div class="menu">
+            <a href="/" class="active">Docs</a>
+            <a href="/reference">Reference</a>
+            <a href="/updates">Updates</a>
+        </div>
+
+        <div class="actions">
+            <div class="stars">
+                <i class="ri-github-fill"></i>
+                <div>{stars}</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        stars;
+        
+        async mounted(){
+            const response = await fetch('https://api.github.com/repos/NewwyJS/Newwy');
+            const result = await response.json();
+            this.update({ stars: result.stargazers_count });
+        }
+    </script>
+</div>
+
+<style>
+    .header {
+        position: sticky;
+        top: 0;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        backdrop-filter: $blur.default;
+        background-color: $colors.salego-faded;
+
+        .container {
+            display: grid;
+            grid-template-columns: 150px 1fr auto;
+            align-items: center;
+            gap: 32px;
+
+            .logo {
+                display: block;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .menu {
+                margin-left: auto;
+                display: flex;
+                gap: 24px;
+                align-items: center;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    color: $colors.black-faded;
+                    font-weight: 600;
+
+                    &.active {
+                        color: $colors.black;
+                    }
+                }
+            }
+
+            .actions {
+                display: flex;
+                justify-content: flex-end;
+                gap: 16px;
+
+                .stars {
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+
+                    i {
+                        font-size: 28px;
+                    }
+                }
+            }
+        }
+    }
+</style>

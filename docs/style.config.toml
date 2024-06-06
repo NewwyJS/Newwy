@@ -1,0 +1,34 @@
+[colors]
+black="#000"
+black-faded="#0005"
+white="#FFF"
+gray="#ddd"
+salego="#F3F7FD"
+salego-faded="#F3F7FD55"
+blueWood="#334155"
+
+[fonts]
+default="Outfit, arial"
+
+[text]
+default = "16px"
+h1 = "40px"
+h2 = "32px"
+h3 = "28px"
+h4 = "24px"
+h5 = "20px"
+h6 = "16px"
+
+[container]
+sm = "100%"
+md = "768px"
+lg = "996px"
+xl = "1280px"
+
+[radius]
+small = "4px"
+default = "8px"
+full = "9999px"
+
+[blur]
+default = "blur(12px)"
