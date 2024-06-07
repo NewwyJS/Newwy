@@ -40,7 +40,6 @@
         <li>get - GET</li>
         <li>post - POST</li>
         <li>put - PUT</li>
-        <li>patch - PATCH</li>
         <li>del - DELETE</li>
     </ul>
 
