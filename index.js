@@ -1,3 +1,3 @@
-import Newwy from "./lib/app.js";
+import newwy from './lib/vite.js';
 
-export default Newwy;
+export default newwy;

@@ -63,7 +63,7 @@
         isActiveTab(tab){
             return tab === this.tab;
         }
-
+ 
         switchTab(tab){
             this.update({ tab });
         }

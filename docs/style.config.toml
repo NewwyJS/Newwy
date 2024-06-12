@@ -23,7 +23,7 @@ h6 = "16px"
 sm = "100%"
 md = "768px"
 lg = "996px"
-xl = "1280px"
+xl = "1140px"
 
 [radius]
 small = "4px"

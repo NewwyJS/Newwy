@@ -1,6 +1,6 @@
 <div @name="app-header" class="header">
     <div class="container">
-        <a href="/" class="logo"><img src="logo.svg"></a>
+        <a href="/" class="logo"><img src="/static/logo.svg"></a>
         <div class="menu">
             <a href="/" class="active">Docs</a>
             <a href="/updates">Updates</a>
