@@ -1,11 +1,11 @@
 [colors]
 black="#000"
-black-faded="#0005"
 white="#FFF"
-gray="#ddd"
-salego="#F3F7FD"
-salego-faded="#F3F7FD55"
-blueWood="#334155"
+blue="#30AAFF"
+grayed="#A4C1D6"
+wildSand="#F5F5F5"
+whisper="#F5F5F9"
+darkerBlue="#0065AC"
 
 [fonts]
 default="Outfit, arial"

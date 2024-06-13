@@ -1,0 +1,23 @@
+<div @name="page-get-started">
+    <app-docs>
+        <div>
+            <h2>Get started</h2>
+            <div class="big">
+                Newwy's objective is to make Nue available through a simple SSR (Server Side Rendering) framework with familiar developer standards.
+            </div>
+
+            <hr>
+
+            <code-example>
+                <div>
+                    Test<br>
+                    123
+                </div>
+            </code-example>
+
+        </div>
+    </app-layout>
+</div>
+
+<style>
+</style>

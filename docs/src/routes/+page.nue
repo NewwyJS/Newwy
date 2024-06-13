@@ -1,132 +1,39 @@
-<div @name="page" class="docs">
-    <app-header></app-header>
+<div @name="page-home">
+    <app-layout>
+        <div class="container home">
+                <img src="/static/logo-big.svg"> 
 
-    <div class="container">
-        <div class="menu">
-            <a href="#" @click.prevent="switchTab('gettingstarted')" class="{isActive('gettingstarted')}">
-                <i class="ri-rocket-2-line"></i>
-                <div>Getting started</div>
-            </a>
+                <h2>Welcome to Newwy</h2>
 
-            <a href="#" @click.prevent="switchTab('guide')" class="{isActive('guide')}">
-                <i class="ri-book-open-line"></i>
-                <div>Quick start</div>
-            </a>
-
-            <hr>
-
-            <a href="#" @click.prevent="switchTab('routing')" class="{isActive('routing')}">
-                <i class="ri-route-line"></i>
-                <div>Routing</div>
-            </a>
-
-            <a href="#" @click.prevent="switchTab('middlewares')" class="{isActive('middlewares')}">
-                <i class="ri-plug-line"></i>
-                <div>Middlewares</div>
-            </a>
-
-            <a href="#" @click.prevent="switchTab('cors')" class="{isActive('cors')}">
-                <i class="ri-shield-line"></i>
-                <div>CORS</div>
-            </a>
-
-            <a href="#" @click.prevent="switchTab('styling')" class="{isActive('styling')}">
-                <i class="ri-brush-line"></i>
-                <div>Styling</div>
-            </a>
+                <div class="buttons">
+                    <button-primary href="/docs/get-started"><div>Get started</div></button-primary>
+                    <button-primary href="/changes"><div>View latest changes</div></button-primary>
+                </div>
         </div>
-
-        <div>
-            <div :hidden="!isActiveTab('gettingstarted')"><docs-getting-started /></div>
-            <div :hidden="!isActiveTab('guide')"><docs-guide /></div>
-            <div :hidden="!isActiveTab('routing')"><docs-routing /></div>
-            <div :hidden="!isActiveTab('server')"><docs-server /></div>
-            <div :hidden="!isActiveTab('404')"><docs-404 /></div>
-            <div :hidden="!isActiveTab('middlewares')"><docs-middlewares /></div>
-            <div :hidden="!isActiveTab('cors')"><docs-cors /></div>
-            <div :hidden="!isActiveTab('styling')"><docs-styling /></div>
-        </div>
-    </div>
-
-    <app-footer></app-footer>
-
-    <script>
-        tab = 'gettingstarted';
-
-        isActive(tab){
-            if (tab === this.tab) {
-                return 'active';
-            }
-            return '';
-        }
-
-        isActiveTab(tab){
-            return tab === this.tab;
-        }
- 
-        switchTab(tab){
-            this.update({ tab });
-        }
-    </script>
+    </app-layout>
 </div>
 
 <style>
-    .docs {
-        &>.container {
-            display: grid;
-            grid-template-columns: 250px 1fr;
-            gap: 40px;
-            padding-bottom: 32px;
+.home {
+    margin-block: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 
-            &>.menu {
-                padding-block: 32px;
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
-                position: sticky;
-                top: 80px;
-                height: fit-content;
-
-                hr {
-                    margin-block: 16px;
-                }
-
-                a {
-                    display: grid;
-                    gap: 8px;
-                    grid-template-columns: 32px 1fr;
-                    align-items: center;
-                    justify-content: center;
-                    text-decoration: none;
-                    color: $colors.black-faded;
-                    transition: .2s ease;
-                    font-weight: 500;
-
-                    i {
-                        width: 32px;
-                        height: 32px;
-                        border-radius: 4px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        background-color: $colors.white;
-                        border: 1px solid $colors.gray;
-                        transition: .2s ease;
-                    }
-
-                    &:hover,
-                    &.active {
-                        i {
-                            background-color: $colors.black;
-                            color: $colors.white;
-                        }
-
-                        color: $colors.black;
-                    }
-                }
-            }
-
-
-        }
+    h2 {
+        margin: 0;
+        padding: 0;
     }
+
+    img {
+        display: block;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 16px;
+    }
+}
 </style>

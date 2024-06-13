@@ -1,0 +1,31 @@
+<a class="button button-primary" href="{ href }" @name="button-primary">
+    <slot/>
+</a>
+
+<style>
+.button {
+    display: inline-flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    transition: .2s ease;
+
+    &.button-primary {
+        background-color: $colors.blue;
+        color: $colors.white;
+
+        &:hover {
+            background-color: $colors.darkerBlue
+        }
+    }
+}
+</style>

@@ -1,13 +1,16 @@
-<div class="footer" @name="app-footer">
+<footer @name="app-footer" class="footer">
     <div class="container">
-        Newwy - MIT License - Powered by Nue
+        &copy; 2024 Newwy - MIT License
     </div>
-</div>
+</footer>
 
 <style>
     .footer {
+        border-top: 1px solid $colors.whisper;
+        text-align: center;
+        margin-top: auto;
         padding-block: 32px;
         border-top: 1px solid $colors.gray;
-        color: $colors.black-faded;
+        color: $colors.grayed;
     }
 </style>

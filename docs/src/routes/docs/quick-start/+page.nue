@@ -1,0 +1,16 @@
+<div @name="page-quick-start">
+    <app-docs>
+        <div>
+            <h2>Quick start</h2>
+            <div class="big">
+                
+            </div>
+
+            <hr>
+
+        </div>
+    </app-layout>
+</div>
+
+<style>
+</style>

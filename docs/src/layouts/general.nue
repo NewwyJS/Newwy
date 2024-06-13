@@ -1,0 +1,49 @@
+<div @name="app-layout" class="layout">
+<app-topbar></app-topbar>
+    <app-header></app-header>
+    <slot></slot>
+    <app-footer></app-footer>
+</div>
+
+<div @name="app-docs" class="layout">
+<app-topbar></app-topbar>
+    <app-header></app-header>
+  
+    <div class="container">
+      <div class="docs">
+        <div class="sidebar">
+          <sidebar-item href="/docs/get-started" icon="rocket-2-line" title="Get started" />
+          <sidebar-item href="/docs/quick-start" icon="book-line" title="Quick start" />
+        </div>
+        <slot></slot>
+      </div>
+    </div>
+
+    <app-footer></app-footer>
+</div>
+
+<style>
+.layout {
+  height: 100vh;
+
+  /* This makes margins not work */
+  display: flex;
+  flex-direction: column;
+
+  .sidebar {
+    padding: 24px;
+    border-radius: 16px;
+    background-color: #F5F5F95F;
+    border: 1px solid $colors.wildSand;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .docs {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+  }
+}
+</style>

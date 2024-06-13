@@ -1,10 +1,21 @@
-<div @name="app-header" class="header">
+<div @name="app-topbar" class="topbar">
+    Newwy v0.0.1a is out now!
+</div>
+
+<header @name="app-header" class="header">
     <div class="container">
         <a href="/" class="logo"><img src="/static/logo.svg"></a>
         <div class="menu">
-            <a href="/" class="active">Docs</a>
-            <a href="/updates">Updates</a>
+            <a href="/" class="{isActiveRoute('/') ? 'active': ''}">Home</a>
+            <a href="/docs/get-started" class="{isActiveRoute('/docs', true) ? 'active': ''}">Docs</a>
+            <a href="/updates" class="{isActiveRoute('/updates') ? 'active': ''}">Updates</a>
         </div>
+
+        <form method="get">
+            <div class="search">
+                <input type="text" name="s"  placeholder="Search">
+            </div>
+        </form>
 
         <div class="actions">
             <div class="stars">
@@ -16,6 +27,22 @@
 
     <script>
         stars;
+
+        isActiveRoute(url, sw = false){
+            const location = window.location.pathname;
+
+            if (!sw) {
+                if(location === url){
+                    return true;
+                }
+            } else {
+                if(location.startsWith(url)){
+                    return true;
+                }
+            }
+
+            return false;
+        }
         
         async mounted(){
             const response = await fetch('https://api.github.com/repos/NewwyJS/Newwy');
@@ -23,9 +50,17 @@
             this.update({ stars: result.stargazers_count });
         }
     </script>
-</div>
+</header>
 
 <style>
+    .topbar {
+        background-color: $colors.blue;
+        color: $colors.white;
+        padding-block: 12px;
+        text-align: center;
+        font-weight: 500;
+    }
+
     .header {
         position: sticky;
         top: 0;
@@ -37,7 +72,7 @@
 
         .container {
             display: grid;
-            grid-template-columns: 150px 1fr auto;
+            grid-template-columns: 150px 1fr auto auto;
             align-items: center;
             gap: 32px;
 
@@ -59,11 +94,31 @@
                 a {
                     display: block;
                     text-decoration: none;
-                    color: $colors.black-faded;
-                    font-weight: 600;
+                    color: $colors.black;
+                    font-weight: 700;
 
                     &.active {
-                        color: $colors.black;
+                        color: $colors.blue;
+                    }
+                }
+            }
+
+            .search {
+                position: relative;
+
+                input {
+                    padding: 12px 20px;
+                    border-radius: 999px;
+                    width: 244px;
+                    border: unset;
+                    background-color: $colors.wildSand;
+                    appearance: none;
+                    font-family: inherit;
+                    font-size: inherit;
+
+                    &:placeholder {
+                        color: $colors.light;
+                        opacity: 1;
                     }
                 }
             }

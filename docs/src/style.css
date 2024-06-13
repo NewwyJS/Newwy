@@ -6,8 +6,8 @@ html body {
   margin: 0;
   padding: 0;
   font-family: var(--fonts-default);
-  background-color: var(--colors-salego);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .container {
@@ -53,7 +53,7 @@ h6 {
 }
 
 hr {
-  border-top: 1px solid var(--colors-gray);
+  border-top: 1px solid var(--colors-grayed);
   border-left: unset;
   border-bottom: unset;
   border-right: unset;

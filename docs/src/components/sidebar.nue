@@ -1,0 +1,51 @@
+<a @name="sidebar-item" class="sidebar-item {active}" href="{href}">
+
+    <i class="ri-{icon}"></i>
+    <div>
+        {title}
+    </div>
+
+    <script>
+        active = '';
+
+        mounted(){
+            if(window.location.pathname === this.href){
+                this.active = 'active';
+            }
+        }
+    </script>
+</a>
+
+<style>
+    .sidebar-item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 12px;
+        text-decoration: none;
+        align-items: center;
+        color: $colors.grayed;
+        font-weight: 600;
+
+        i {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $colors.grayed;
+            border-radius: 6px;
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        &.active {
+            color: $colors.blue;
+
+            i {
+                background-color: $colors.blue;
+                color: $colors.white;
+            }
+        }
+    }
+</style>
+
