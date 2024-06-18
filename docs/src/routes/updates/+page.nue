@@ -1,0 +1,15 @@
+<div @name="page-updates">
+    <app-layout>
+        <div class="container">
+            <h2>Latest updates</h2>
+            <p class="big">The latest updates on Newwy.</p>
+            <hr>
+            <h3>v0.0.1a</h3>
+            <ul>
+                <li>First official alpha package</li>
+                <li>Docs to get started</li>
+            </ul>
+            <p>Please mind that Newwy is in early stages of development and will be changed extensively.</p>
+        </div>
+    </app-layout>
+</div>

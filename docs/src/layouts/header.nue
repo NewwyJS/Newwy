@@ -11,11 +11,11 @@
             <a href="/updates" class="{isActiveRoute('/updates') ? 'active': ''}">Updates</a>
         </div>
 
-        <form method="get">
+        <!-- <form method="get">
             <div class="search">
                 <input type="text" name="s"  placeholder="Search">
             </div>
-        </form>
+        </form> -->
 
         <div class="actions">
             <a href="https://github.com/NewwyJS/Newwy" class="stars">
@@ -32,11 +32,11 @@
             const location = window.location.pathname;
 
             if (!sw) {
-                if(location === url){
+                if (location === url) {
                     return true;
                 }
             } else {
-                if(location.startsWith(url)){
+                if (location.startsWith(url)) {
                     return true;
                 }
             }

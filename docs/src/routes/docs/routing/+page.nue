@@ -3,7 +3,8 @@
         <div>
             <h2 class="title">Routing</h2>
             <div class="big">
-                Newwy works with file-based routing. This promotes an organised folder structure and prevents messy routing files.
+                Newwy works with file-based routing. This promotes an organised folder structure and prevents messy
+                routing files.
             </div>
 
             <hr>
@@ -13,30 +14,35 @@
             <ul>
                 <li><code>src/routes</code> is the base route</li>
                 <li><code>src/routes/about</code> creates an <code>/about</code> route</li>
-                <li><code>src/routes/blog/[slug]</code> creates a route with a <em>parameter</em>, <code>slug</code>, that can be used to load data dynamically when a user requests a page like <code>/blog/hello-world</code></li>
+                <li><code>src/routes/blog/[slug]</code> creates a route with a <em>parameter</em>, <code>slug</code>,
+                    that can be used to load data dynamically when a user requests a page like
+                    <code>/blog/hello-world</code></li>
             </ul>
 
             <hr>
 
             <h3>+page.nue</h3>
-            <p style="margin-bottom: 0;padding-bottom: 0;">A <code>+page.nue</code> component defines a page of your app. Pages are only rendered on the client.</p>
+            <p style="margin-bottom: 0;padding-bottom: 0;">A <code>+page.nue</code> component defines a page of your
+                app. Pages are only rendered on the client.</p>
             <code-example><span>
-                    &lt;div @name="page-home"&gt;
-                        &lt;h1&gt;Home&lt;/h1&gt;
-                        &lt;p&gt;Fancy text here&lt;/p&gt;
+&lt;div @name="page-home"&gt;<br>
+                    &emsp;&lt;h1&gt;Home&lt;/h1&gt;<br>
+                    &emsp;&lt;p&gt;Fancy text here&lt;/p&gt;<br>
                     &lt;/div&gt;
                 </span>
             </code-example>
 
             <h3>+server.js</h3>
-            <p style="margin-bottom: 0;padding-bottom: 0;">A <code>+server.js</code> script defines the SSR part of your app. These are only loaded on the server side and data fetched is passed on to the client.</p>
+            <p style="margin-bottom: 0;padding-bottom: 0;">A <code>+server.js</code> script defines the SSR part of your
+                app. These are only loaded on the server side and data fetched is passed on to the client.</p>
             <code-example><span>
 export async function get() { <br>
-&emsp;return { <br>
-&emsp;&emsp;text: "Built with Vite to be extra modular and fast. Look around and modify as much as you want.",<br>
-&emsp;&emsp;title: "Welcome to Newwy, a framework built for Nue",<br>
-&emsp;};<br>
-}
+                    &emsp;return { <br>
+                    &emsp;&emsp;text: "Built with Vite to be extra modular and fast. Look around and modify as much as
+                    you want.",<br>
+                    &emsp;&emsp;title: "Welcome to Newwy, a framework built for Nue",<br>
+                    &emsp;};<br>
+                    }
                 </span>
             </code-example>
 
@@ -51,7 +57,10 @@ export async function get() { <br>
             <hr>
 
             <h3>+404.nue / +404.js</h3>
-            <p style="margin-bottom: 0;padding-bottom: 0;">A <code>+404.nue / +404.js</code> defines the 404 (not found) page of your app. You can choose to only load the <code>+404.nue</code> to show a simple 404 page or load both the <code>+404.nue / +404.js</code> to show a more customized 404 page with data from an api for example.</p>
+            <p style="margin-bottom: 0;padding-bottom: 0;">A <code>+404.nue / +404.js</code> defines the 404 (not found)
+                page of your app. You can choose to only load the <code>+404.nue</code> to show a simple 404 page or
+                load both the <code>+404.nue / +404.js</code> to show a more customized 404 page with data from an api
+                for example.</p>
         </div>
-    </app-layout>
+        </app-layout>
 </div>
