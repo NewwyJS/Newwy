@@ -1,23 +1,27 @@
 <div @name="page-get-started">
     <app-docs>
         <div>
-            <h2>Get started</h2>
+            <h2 class="title">Get started</h2>
             <div class="big">
                 Newwy's objective is to make Nue available through a simple SSR (Server Side Rendering) framework with familiar developer standards.
             </div>
 
             <hr>
 
-            <code-example>
-                <div>
-                    Test<br>
-                    123
-                </div>
-            </code-example>
+            <h3>Why Newwy?</h3>
+            <p>Newwy is a free and open-source framework to create full-stack SSR (Server Side Rendering) web applications and websites with Nue.</p>
 
+            <h4>What comes with it?</h4>
+            <ul>
+                <li>Server Side Rendering - So you don't have to setup a server seperately.</li>
+                <li>Automatic component import - You don't have to import them, they work out-of-the-box.</li>
+                <li>Build with Vite - Fast, modular and extensible loading with Vite.</li>
+                <li>Faster loading - With browser built-in prerendering and <a href="https://github.com/jeremyroman/alternate-loading-modes/blob/main/triggers.md#speculation-rules">speculation rule API</a></li>
+            </ul>
+
+            <h4>VS Code extensions</h4>
+            <p>If you want syntax highlighting for Visual Studio Code, you can use the following extension.</p>
+            <a href="https://marketplace.visualstudio.com/items?itemName=yaoyuanzhang.nue">https://marketplace.visualstudio.com/items?itemName=yaoyuanzhang.nue</a>
         </div>
     </app-layout>
 </div>
-
-<style>
-</style>

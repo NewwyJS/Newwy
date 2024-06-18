@@ -18,10 +18,10 @@
         </form>
 
         <div class="actions">
-            <div class="stars">
+            <a href="https://github.com/NewwyJS/Newwy" class="stars">
                 <i class="ri-github-fill"></i>
                 <div>{stars}</div>
-            </div>
+            </a>
         </div>
     </div>
 
@@ -64,6 +64,7 @@
     .header {
         position: sticky;
         top: 0;
+        padding-block: 16px;
         height: 80px;
         display: flex;
         align-items: center;
@@ -88,7 +89,7 @@
             .menu {
                 margin-left: auto;
                 display: flex;
-                gap: 24px;
+                gap: 32px;
                 align-items: center;
 
                 a {
@@ -132,6 +133,8 @@
                     display: flex;
                     gap: 8px;
                     align-items: center;
+                    color: inherit;
+                    text-decoration: none;
 
                     i {
                         font-size: 28px;

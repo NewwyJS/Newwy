@@ -1,7 +1,15 @@
 <footer @name="app-footer" class="footer">
     <div class="container">
-        &copy; 2024 Newwy - MIT License
+        &copy; {year} Newwy - MIT License
     </div>
+
+    <script>
+        year = '';
+
+        mounted(){
+            this.year = new Date().getUTCFullYear();
+        }
+    </script>
 </footer>
 
 <style>

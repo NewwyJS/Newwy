@@ -1,16 +1,39 @@
 <div @name="page-quick-start">
     <app-docs>
         <div>
-            <h2>Quick start</h2>
+            <h2 class="title">Quick start</h2>
             <div class="big">
-                
+                How to install and start with Newwy. Newwy is built on Vite. You can add Newwy as a plugin to your Vite app.
             </div>
-
             <hr>
+            <h3>Install Newwy</h3>
+            <p>Install the example and get started right away</p>
+            <code-example><span>https://github.com/NewwyJS/Newwy/tree/main/example</span></code-example>
+            <p>Install dependencies</p>
+            <code-example><span>npm install</span></code-example>
+            <p>Start developing</p>
+            <code-example><span>npm run dev</span></code-example>
 
+            <h3>NPM</h3>
+            <p>An NPM package is currently a work in progress.</p>
+
+            <code-example><span>npm i https://github.com/NewwyJS/Newwy</span></code-example>
+
+            <p>Then, add the Newwy plugin to Vite</p>
+            
+            <code-example><span>import newwy from 'newwy';<br>
+// ...<br>
+export default defineConfig({<br>
+&emsp;plugins: [newwy()],<br>
+});<br>
+// ...</span></code-example>
+
+            <h3>Deploy Newwy</h3>
+            <p>Deploy Newwy using the start command</p>
+            <code-example><span>npm run start</span></code-example>
+
+            <h3>Notice</h3>
+            <p style="color:red;">There is no option for SSG.</p>
         </div>
-    </app-layout>
+    </app-docs>
 </div>
-
-<style>
-</style>

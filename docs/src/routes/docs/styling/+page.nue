@@ -1,0 +1,10 @@
+<div @name="page-styling">
+    <app-docs>
+        <div>
+            <h2 class="title">Styling</h2>
+             <div class="big">Newwy inspires people to use as much native CSS as possible because it brings your code closer to the browser and requires less compiling.</div>
+
+            <hr>
+        </div>
+    </app-layout>
+</div>

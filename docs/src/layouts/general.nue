@@ -12,8 +12,13 @@
     <div class="container">
       <div class="docs">
         <div class="sidebar">
+          <label>Navigation</label>
           <sidebar-item href="/docs/get-started" icon="rocket-2-line" title="Get started" />
           <sidebar-item href="/docs/quick-start" icon="book-line" title="Quick start" />
+
+          <label>Usage</label>
+          <sidebar-item href="/docs/routing" icon="road-map-line" title="Routing" />
+          <sidebar-item href="/docs/styling" icon="pencil-ruler-line" title="Styling" />
         </div>
         <slot></slot>
       </div>
@@ -38,12 +43,27 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    height: fit-content;
+
+    label {
+      font-weight: bold;
+    }
+
+    label:not(:first-child) {
+      margin-top: 12px;
+    }
   }
 
   .docs {
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 40px;
+    padding-block: 24px 40px;
+
+    .title {
+      margin-top: 0;
+      padding-top: 0;
+    }
   }
 }
 </style>

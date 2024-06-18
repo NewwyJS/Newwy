@@ -1,12 +1,12 @@
 <pre @name="code-example" class="code-example">
-<slot></slot>
+    <slot></slot>
 </pre>
 
 <style>
 .code-example {
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-left: 3px solid $colors-blue;
+    background: #F5F5F95F;
+    border: 1px solid $colors.whisper;
+    border-left: 3px solid $colors.blue;
     color: #666;
     page-break-inside: avoid;
     font-family: monospace;
