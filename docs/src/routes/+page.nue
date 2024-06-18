@@ -7,7 +7,7 @@
 
                 <div class="buttons">
                     <button-primary href="/docs/get-started"><div>Get started</div></button-primary>
-                    <button-primary href="/changes"><div>View latest changes</div></button-primary>
+                    <button-primary href="/updates"><div>View latest changes</div></button-primary>
                 </div>
         </div>
     </app-layout>
